@@ -11,7 +11,7 @@ from .cyaml import _CLoader
 from .loader import _Loader
 
 _L = TypeVar("_L", bound=_Loader | _CLoader)
-_N = TypeVar("_N", bound=Node)
+_N = TypeVar("_N", bound=Node | MappingNode | ScalarNode | SequenceNode)
 
 _Scalar: TypeAlias = str | int | float | bool | None
 
